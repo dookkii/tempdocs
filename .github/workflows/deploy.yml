@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-  name: Build Docusaurus
+    name: Build Docusaurus
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,8 +29,8 @@ jobs:
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          - path: build
-            branch: releases/v4
+          path: build
+          branch: releases/v4
 
   deploy:
     name: Deploy to GitHub Pages
