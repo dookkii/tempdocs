@@ -1,6 +1,7 @@
 # MAT2505 - Đề cương
 
 :::info
+Latest Update: v1.2 (12/24/2024, 00:17:00 GMT+7)
 Original Notion: https://tunaa.notion.site/MAT2505-c-ng-1656f389eb518042af9cd1bef2c44232
 :::
 
@@ -30,7 +31,7 @@ Cụ thể, bạn có thể gọi hàm dựng của lớp cha bằng cách sử 
 
 Từ khóa **`final`** được sử dụng để không cho phép một phương thức được overriding trong Java. Khi một phương thức được khai báo với từ khóa `final`, lớp con sẽ không thể ghi đè phương thức đó.
 
-### 6. Từ khóa nào  được sử dụng để không cho phép thay đổi nội dung của biến?
+### 6. Từ khóa nào được sử dụng để không cho phép thay đổi nội dung của biến?
 
 Từ khóa **`final`** được sử dụng để không cho phép thay đổi nội dung của biến trong Java. Khi một biến được khai báo với từ khóa `final`, giá trị của biến đó sẽ không thể thay đổi sau khi nó đã được gán một giá trị ban đầu.
 
@@ -92,7 +93,7 @@ class Example {
 - Thay đổi thuộc tính của đối tượng trong phương thức sẽ ảnh hưởng đến đối tượng ngoài phương thức.
 - Thay đổi tham chiếu của đối tượng trong phương thức không ảnh hưởng đến tham chiếu ban đầu ngoài phương thức.
 
-9. Phương thức overloading được xác định tại thời điểm nào?
+### 9. Phương thức overloading được xác định tại thời điểm nào?
 
 Phương thức **overloading** (nạp chồng phương thức) được xác định **tại thời điểm biên dịch** (compile-time).
 
@@ -204,7 +205,7 @@ Lập trình Hướng đối tượng (OOP - Object-Oriented Programming) có c�
 #### Tóm lại:
 Lập trình Hướng đối tượng giúp cải thiện khả năng tổ chức và quản lý mã nguồn, giảm sự phức tạp trong các dự án lớn và làm tăng khả năng tái sử dụng mã qua các tính chất quan trọng: **Đóng gói**, **Kế thừa**, **Đa hình**, và **Trừu tượng**.
 
-### 12. Khi một biến thành viên không được khai báo cùng với quyền truy cập (Acess Modifier) nào thì quyền truy cập nào sẽ được sử dụng?
+### 12. Khi một biến thành viên không được khai báo cùng với quyền truy cập (Access Modifier) nào thì quyền truy cập nào sẽ được sử dụng?
 
 Khi một biến thành viên không được khai báo cùng với quyền truy cập (Access Modifier) nào trong Java, quyền truy cập mặc định sẽ được sử dụng, đó là **`package-private`** (hoặc **`default`**).
 
@@ -264,7 +265,7 @@ Các quyền truy cập (Access Modifiers) trong Java xác định phạm vi (sc
 
 Việc lựa chọn quyền truy cập phù hợp giúp bảo vệ dữ liệu và đảm bảo tính an toàn và tổ chức trong mã nguồn.
 
-### 14. Nếu superclass và subclass có các biến cùng tên, từ khóa nào  có thể được sử dụng để truy cập biến của lớp superclass từ trong lớp subclass?
+### 14. Nếu superclass và subclass có các biến cùng tên, từ khóa nào có thể được sử dụng để truy cập biến của lớp superclass từ trong lớp subclass?
 
 Khi **superclass** và **subclass** có các biến cùng tên, bạn có thể sử dụng từ khóa **`super`** để truy cập biến của **superclass** từ trong **subclass**.
 
