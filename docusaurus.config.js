@@ -10,7 +10,7 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'TomChienXuPlayground',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -22,7 +22,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'cheeseytunaa', // Usually your GitHub org/user name.
+  organizationName: 'dookkii', // Usually your GitHub org/user name.
   projectName: 'tempdocs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   trailingSlash: false,
