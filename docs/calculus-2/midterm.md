@@ -22,7 +22,7 @@ a_{n + 1} \le a_n \; \forall \; n \le 1 \\
 ## Điều kiện cần của chuỗi hội tụ
 Nếu chuỗi số $\displaystyle \sum_{n = 1}^\infty a_n$ hội tụ thì $\displaystyle \lim_{n \to \infty} a_n = 0$.
 
-## Tiêu chuẩn hội tụ Cauchu của chuỗi số
+## Tiêu chuẩn hội tụ Cauchy của chuỗi số
 Chuỗi số $\displaystyle \sum_{n = 1}^\infty a_n$ hội tụ khi và chỉ khi:
 
   $$\forall \; \varepsilon > 0, \exists \; N = N(\varepsilon), \forall \; n > N, \forall \; p \in \mathbb{Z}^+:$$
@@ -181,7 +181,7 @@ Khi đó:
 
 ## Một số khai triển Taylor cơ bản
 | Biểu thức            | Điều kiện của $x$    | Khai triển rút gọn                                                            | Khai triển đầy đủ                                                                               |
-|----------------------|----------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+|:--------------------:|:--------------------:|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | $e^x$                | $(-\infty; +\infty)$ | $\displaystyle \sum_{n = 0}^\infty \dfrac{x^n}{n!}$                           | $1 + x + \dfrac{x^2}{2!} + \cdots + \dfrac{x^n}{n!} + \cdots$                                   |
 | $\sin x$             | $(-\infty; +\infty)$ | $\displaystyle \sum_{n = 0}^\infty \dfrac{(-1)^n}{(2n + 1)!}x^{2n + 1}$       | $x - \dfrac{x^3}{3!} + \dfrac{x^5}{5!} - \cdots + \dfrac{(-1)^n}{(2n + 1)!}x^{2n + 1} + \cdots$ |
 | $\cos x$             | $(-\infty; +\infty)$ | $\displaystyle \sum_{n = 0}^\infty \dfrac{(-1)^n}{(2n)!}x^{2n}$               | $1 - \dfrac{x^2}{2!} + \dfrac{x^4}{4!} - \cdots + \dfrac{(-1)^n}{(2n)!}x^{2n} + \cdots$         |
@@ -191,5 +191,5 @@ Khi đó:
 | $\dfrac{1}{1 + x^2}$ | $(-1; 1)$            | $\displaystyle \sum_{n = 0}^\infty (-1)^{n}x^{2n}$                            | $1 - x^2 + x^4 - \cdots + (-1)^{n}x^{2n} + \cdots$                                              |
 
 | Biểu thức               | Khai triển rút gọn                                                            | Khai triển đầy đủ                                                                               |
-|-------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+|:-----------------------:|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | $(1 + x)^m \\ (-1; 1)$  | $\displaystyle \sum_{n = 0}^\infty \dfrac{m(m - 1) \cdots(m - n + 1)}{n!}x^n$ | $1 + mx + \dfrac{m(m - 1)}{2!}x^2 + \cdots + \dfrac{m(m - 1) \cdots (m - n - 1)}{n!} + \cdots$  |
