@@ -25,7 +25,7 @@ Ta có: $\displaystyle \lim_{n \to \infty} \dfrac{1}{n!} = \lim_{n \to \infty} \
 Như vậy, chuỗi số $\displaystyle \sum_{n = 0}^{+\infty} \dfrac{(-1)^n}{n!}$ hội tụ theo dấu hiệu Leibniz.
 
 ### Câu 1.2
-Phần dư thứ $n$ của chuỗi số: $r_n = \displaystyle \sum_{k = n + 1}^\infty (-1)^{k} \dfrac{1}{n!}$.
+Phần dư thứ $n$ của chuỗi số: $r_n = \displaystyle \sum_{k = n + 1}^\infty (-1)^{k} \dfrac{1}{k!}$.
 
 Theo định lý *Ước lượng tổng của chuỗi đan dấu*: $|r_n| \le \dfrac{1}{(n + 1)!}$.
 
@@ -102,12 +102,12 @@ Ta có: $\displaystyle \lim_{n \to \infty} \dfrac{2n + 100}{3n^2 + n} = 0 \; \te
 
 Xét hàm số $f(x) = \dfrac{2x + 100}{3x^2 + x}$.
 
-$\Rightarrow f'(x) = \dfrac{2(3x^2 + x) - 6x(2x + 100)}{(3x^2 + x)^2} = \dfrac{6x^2 + 2x - 12x^2 - 600x}{(3x^2 + x)^2} = \dfrac{-6x^2 - 598x}{(3x^2 + x)^2}$.
+$\Rightarrow f'(x) = \dfrac{2(3x^2 + x) - (6x + 1)(2x + 100)}{(3x^2 + x)^2} = \dfrac{6x^2 + 2x - 12x^2 - 600x - 2x - 100}{(3x^2 + x)^2} = \dfrac{-6x^2 - 612x - 100}{(3x^2 + x)^2}$.
 
 $\forall \; x > 0: \begin{cases}
--6x^2 - 598x < 0 \\
+-6x^2 - 612x - 100 < 0 \\
 (3x^2 + x)^2 > 0
-\end{cases} \Rightarrow \dfrac{-6x^2 - 598x}{(3x^2 + x)^2} < 0 \Rightarrow f'(x) < 0 \; \forall \; x > 0$.
+\end{cases} \Rightarrow \dfrac{-6x^2 - 612x - 100}{(3x^2 + x)^2} < 0 \Rightarrow f'(x) < 0 \; \forall \; x > 0$.
 
 Như vậy, $\left\{ \dfrac{2n + 100}{3n^2 + n} \right\}_{n = 0}^\infty$ lập thành một dãy số giảm $\textcircled{2}$.
 
@@ -247,7 +247,7 @@ $\dfrac{1}{1 + x} = \displaystyle \sum_{n = 0}^{+\infty} (-1)^n x^n = 1 - x + x^
 
 Thay $x \to x^7$, ta có:
 
-$\dfrac{1}{1 + x^7} = \displaystyle \sum_{n = 0}^{+\infty} (-1)^n x^{7n} = 1 - x^7 + x^14 - \cdots + \cdots (x \in (-1; 1))$.
+$\dfrac{1}{1 + x^7} = \displaystyle \sum_{n = 0}^{+\infty} (-1)^n x^{7n} = 1 - x^7 + x^{14} - \cdots + \cdots (x \in (-1; 1))$.
 
 Nguyên hàm hai vế, ta có:
 
