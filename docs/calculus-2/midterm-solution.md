@@ -90,7 +90,7 @@ Xét giới hạn: $\displaystyle \lim_{n \to \infty} \dfrac{\dfrac{2}{3n}}{\dfr
 
 Vì giới hạn này tồn tại khác $0$ nên chuỗi số $\displaystyle \sum_{n = 0}^{+\infty} \dfrac{2}{3n}$ sẽ cùng hội tụ hoặc cùng phân kỳ với chuỗi số $\displaystyle \sum_{n = 0}^{+\infty} \dfrac{1}{n}$ theo dấu hiệu so sánh.
 
-Mà $\displaystyle \sum_{n = 0}^{+\infty} \dfrac{2}{3n}$ là chuỗi điều hòa, vậy nên chuỗi này phân kỳ.
+Mà $\displaystyle \sum_{n = 0}^{+\infty} \dfrac{1}{n}$ là chuỗi điều hòa, vậy nên chuỗi này phân kỳ.
 
 Theo dấu hiệu so sánh, $\displaystyle \sum_{n = 0}^{+\infty} \left| (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right) \right|$ cũng phân kỳ $\textcircled{*}$.
 
