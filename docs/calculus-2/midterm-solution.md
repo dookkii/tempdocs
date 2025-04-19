@@ -125,11 +125,11 @@ Khảo sát sự hội tụ đều của các chuỗi hàm-dãy hàm sau trong k
 ### Câu 3.1
 $\displaystyle \sum_{n = 1}^{+\infty} \dfrac{\sin(x) \sin(nx)}{\sqrt{n + x}} = \sin(x) \sum_{n = 1}^{+\infty} \dfrac{\sin(nx)}{\sqrt{n + x}}$.
 
-Xét: $I = \displaystyle \sum_{n = 1}^{+\infty} \sin(kx)$, nhân cả hai vế với $\sin \left( \dfrac{x}{2} \right)$:
+Xét: $I = \displaystyle \sum_{k = 1}^{n} \sin(kx)$, nhân cả hai vế với $\sin \left( \dfrac{x}{2} \right)$:
 
-$I \sin \left( \dfrac{x}{2} \right) = \displaystyle \sum_{k = 1}^{+\infty} \sin(kx) \cdot \sin \left( \dfrac{x}{2} \right)$
+$I \sin \left( \dfrac{x}{2} \right) = \displaystyle \sum_{k = 1}^{n} \sin(kx) \cdot \sin \left( \dfrac{x}{2} \right)$
 
-$= \displaystyle \sum_{k = 1}^{+\infty} \dfrac{1}{2} \left[ \cos \left( kx - \dfrac{x}{2} \right) - \cos \left( kx + \dfrac{x}{2} \right) \right]$
+$= \displaystyle \sum_{k = 1}^{n} \dfrac{1}{2} \left[ \cos \left( kx - \dfrac{x}{2} \right) - \cos \left( kx + \dfrac{x}{2} \right) \right]$
 
 $= \dfrac{1}{2} \left[ \cos \left( \dfrac{x}{2} \right) - \cos \left( \dfrac{3x}{2} \right) + \cos \left( \dfrac{3x}{2} \right) - \cdots + \cdots + \cos \left( \dfrac{(2n - 1)x}{2} \right) - \cos \left( \dfrac{(2n + 1)x}{2} \right) \right]$
 
