@@ -1,0 +1,55 @@
+# Dấu hiệu nhận biết số chia hết cho 3
+
+:::info
+- Lớp 12A1, Trường THPT Nguyễn Thị Minh Khai
+- Hà Nội, 10/16/2023
+
+## Credits:
+- **Ý tưởng:** Nguyễn Minh Tường
+- **Giải trình:** Nguyễn Đức Tuân
+:::
+
+## Phát biểu:
+
+Các số nguyên có tổng các chữ số chia hết cho $3$ thì số đó chia hết cho $3$.
+
+### Phát biểu dưới dạng công thức:
+
+Xét số nguyên dương tổng quát $n$ chữ số có dạng là: $A = \overline{a_1 a_2 \dots a_{n-1} a_n}$
+
+Tổng các chữ số là: $S = \displaystyle\sum^{n}_{i = 1} a_i = a_1 + a_2 + \dots + a_{n - 1} + a_n$. Khi đó nếu $S \mid 3$ thì $A \mid 3$.
+
+## Chứng minh:
+
+Ta sẽ viết lại số $A$ như sau:
+
+$A = \overline{a_1 a_2 \dots a_{n-1} a_n} = \overline{a_1 0 \dots 00} + \overline{a_2 \dots 00} + \dots + \overline{a_{n - 1}0} + a_n$
+
+$A = a_1 \times 10^n + a_2 \times 10^{n - 1} + \dots + a_{n - 1} \times 10^1 + a_n \times 10^0$
+
+$A = a_1 \times 10^n + a_2 \times 10^{n - 1} + \dots + a_{n - 1} \times 10 + a_n$
+
+$A = a_1 \times (10^n - 1) + a_2 \times (10^{n - 1} - 1) + \dots + a_{n - 1} \times (10 - 1) + a_n \times (1 - 1) + (a_1 + a_2 + \dots + a_{n - 1} + a_n)$
+
+Mà theo giả thiết, tổng các chữ số sẽ chia hết cho $3$: $S = \displaystyle\sum^{n}_{i = 1} a_i = a_1 + a_2 + \dots + a_{n - 1} + a_n \vdots 3$
+
+Vậy nên, $S$ sẽ có dạng là $3$ nhân với một số nào đó, tạm gọi là $l$.
+
+$A = a_1 \times (10^n - 1) + a_2 \times (10^{n - 1} - 1) + \dots + a_{n - 1} \times (10 - 1) + a_n \times (1 - 1) + 3 \times l$
+
+$A = a_1 \times (10^n - 1) + a_2 \times (10^{n - 1} - 1) + \dots + a_{n - 1} \times (10^{n - (n - 1)} - 1) + a_n \times (10^{n - n} - 1) + 3 \times l$
+
+Ta sẽ chứng minh rằng: Biểu thức $10^x - 1 \mid 3 \; \forall \; x \ge 1, x \in \mathbb{N}$ dùng phương pháp quy nạp:
+
+- Giả sử mệnh đề đúng với $x = k$.
+- Xét trường hợp nhỏ nhất: $x = k_{min} = 1: 10^1 - 1 = 9 \mid 3$, mệnh đề đúng.
+- $\forall \; x = k + 1 : 10^{k + 1} - 1 = 10 \times 10^k - 1 = 10 \times (10^k - 1) + 9$, mà $10^k - 1 \mid 3$ (theo giả sử), $9 \mid 3$, vậy nên mệnh đề đúng với $k + 1$.
+- Với quy tắc của phương pháp quy nạp: Mệnh đề $10^x - 1 \mid 3 \; \forall \; x \ge 1, x \in \mathbb{N}$ đã được chứng minh.
+
+Vì đã chia hết cho $3$, các biếu thức sẽ được viết gọn lại thành tích của $3$ và một số nào đó:
+
+$A = a_1 \times 3l_1 + a_2 \times 3l_2 + \dots + a_{n - 1} \times 3l_{n - 1} + a_n \times 3l_n + 3 \times l$
+
+$A = 3 \times (a_1 l_1 + a_2 l_2 + \dots + a_{n - 1} l_{n - 1} + a_nl_n + l)$
+
+Số $A$ bất kỳ với $S \mid 3$ sẽ luôn có thể được viết về dạng $A = 3 \times p$ với $p$ là một số nào đó, vậy nên mệnh đề được chứng minh là đúng.

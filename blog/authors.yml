@@ -8,6 +8,19 @@ yangshun:
     x: yangshunz
     github: yangshun
 
+dookkii_:
+  name: Nguyễn Đức Tuân
+  title: Student, 24-28 @ VNUHUS
+  url: https://github.com/dookkii
+  image_url: https://github.com/dookkii.png
+  page: true
+  socials:
+    website: https://tunaa.io.vn
+    facebook: https://facebook.com/mygfwouldbesomewhere
+    github: dookkii
+    instagram: https://instagram.com/mygfwouldbesomewhere
+    threads: https://threads.com/mygfwouldbesomewhere
+
 slorber:
   name: Sébastien Lorber
   title: Docusaurus maintainer
