@@ -1,0 +1,76 @@
+# Number Theory 101 - Lý thuyết số cơ bản
+
+## Tính chia hết và phép toán Modulo
+
+### Định nghĩa và tính chất cơ bản
+
+- Cho các số nguyên $a$ và $b$ với $a \ne 0$. Ta nói $b$ chia hết cho $a$, nếu tồn tại một số nguyên $c$ sao cho $b = ac$.
+- Trong trường hợp này, ta cũng nói:
+  - $a$ là ước *(factor)* của $b$;
+  - $b$ là bội *(multiple)* của $a$ và ký hiệu $a \mid b$.
+
+:::info[Định lý]
+1. Nếu $a \mid b$ và $a \mid c$ thì $a \mid (b + c)$;
+2. Nếu $a \mid b$ thì $a \mid bc$;
+3. Nếu $a \mid b$ và $b \mid c$ thì $a \mid c$.
+:::
+
+:::info[Định lý]
+Với $a \in \mathbb{Z}$ và $d \in \mathbb{Z}^+$, tồn tại duy nhất các số nguyên $q$ và $r$, với $0 \le r < d$, thỏa mãn $a = dq + r$.
+
+- Ta cũng viết:
+  - $q = a \operatorname{div} d$;
+  - $r = a \bmod d$;
+  - \*Chú ý rằng với $d$ cố định, $a \operatorname{div} d$ và $a \bmod d$ là các hàm từ $\mathbb{Z}$ đến $\mathbb{Z}$.
+- Ta có:
+  - $q = \lfloor a / d \rfloor$;
+  - $r = a − dq = a − d \lfloor a / d \rfloor$.
+:::
+
+### Đồng dư theo modulo $m$
+
+:::info[Định lý]
+- Với $a, b \in Z$ và $m \in \mathbb{Z}^+$:
+  - $a$ đồng dư với $b$ (theo) modulo $m$, ký hiệu $a \equiv b \pmod m$, khi và chỉ khi $m \mid (a − b)$;
+  - $a \equiv b \pmod m$ khi và chỉ khi $a \bmod m = b \bmod m$;
+  - $a \equiv b \pmod m$ khi và chỉ khi tồn tại $k \in \mathbb{Z}$ sao cho $a = b + km$.
+
+- Với $a, b, c, d \in \mathbb{Z}$ và $m \in \mathbb{Z}^+$, nếu $a \equiv b \pmod m$ và $c \equiv d \pmod m$:
+  - $a + c \equiv b + d \pmod m$;
+  - $ac \equiv bd \pmod m$.
+
+:::danger[Hệ quả]
+1. $(a + b) \bmod m = ((a \bmod m) + (b \bmod m)) \bmod m$;
+2. $ab \bmod m = ((a \bmod m)(b \bmod m)) \bmod m$.
+:::
+
+## Biểu diễn số nguyên
+
+### Biểu diễn theo hệ $b$-phân
+- Với mọi $n, b \in \mathbb{Z}^+$ $(b > 1)$, tồn tại duy nhất một dãy $a_ka_{k − 1} \dots a_1a_0$ gồm các chữ số $a_i < b$ $(0 \le i \le k)$ thỏa mãn:
+$$
+n = a_kb^k + a_{k - 1}b^{k - 1} + a_{k - 2}b^{k - 2} + \cdots + a_1b^1 + a_0 = \displaystyle \sum_{i = 0}^k a_ib^i
+$$
+- Ta cũng ký hiệu $n = (a_ka_{k − 1} \dots a_1a_0)_b$.
+- Một số hệ cơ số phổ biến
+  - Hệ cơ số $10$ (hệ thập phân - decimal): $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$;
+  - Hệ cơ số $2$ (nhị phân - binary): $0, 1$;
+  - Hệ cơ số $8$ (hệ bát phân - octal): $0, 1, 2, 3, 4, 5, 6, 7$;
+  - Hệ cơ số 16 (hệ thập lục phân - hexadecimal): $0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F$.
+
+:::tip[Chuyển số từ hệ $b$-phân sang hệ thập phân $(b > 1)$]
+$$
+(a_ka_{k − 1} \dots a_1a_0)_b = \sum_{i = 0}^k a_ib^i
+$$
+:::
+
+:::tip[Chuyển số từ hệ thập phân sang hệ $b$-phân $(b > 1)$]
+1. Tìm giá trị của chữ số ngoài cùng bên phải bằng cách tính $n \bmod b$;
+2. Gán $n := n \operatorname{div} b$;
+3. Lặp lại các bước **(1)** và **(2)** cho đến khi $n = 0$.
+:::
+
+:::tip[Chuyển đổi giữa hệ nhị phân và bát/thập lục phân]
+- Mỗi chữ số trong hệ bát phân tương ứng với một khối $3$ bit trong biểu diễn nhị phân;
+- Mỗi chữ số trong hệ thập lục phân tương ứng với một khối $4$ bit trong biểu diễn nhị phân.
+:::

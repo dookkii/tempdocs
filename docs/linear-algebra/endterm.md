@@ -219,3 +219,5 @@ TO-DO
 3. Từ tính chất "2". các kết quả về định thức phát biểu cho hàng cũng đúng nếu phát biểu lại cho cột.
 4. $\det(AB) = \det(A) \cdot \det(B)$.
 5. Nếu ma trận $A$ khả nghịch thì: $\det(A^{-1}) = \dfrac{1}{\det(A)}$.
+
+$\displaystyle \sum_{i = 1}^{+ \infty}f(x) + \lim_{n \to \infty} f(n) \approx 3.14 \times \dfrac{1}{\pi}$
