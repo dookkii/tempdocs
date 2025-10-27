@@ -1,6 +1,6 @@
 {
-  "label": "Install Online Judge",
-  "position": 10,
+  "label": "Online Judge - Installation Guide",
+  "position": 8,
   "link": {
     "type": "generated-index",
     "description": "This documentation will guide you to setup your own Linux Server, SSH Connection Deployment and Online Judge."

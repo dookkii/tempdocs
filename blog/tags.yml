@@ -17,3 +17,13 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+solve:
+  label: Solve
+  permalink: /solve
+  description: Solve tag description
+
+solution:
+  label: Solution
+  permalink: /solution
+  description: Solution tag description

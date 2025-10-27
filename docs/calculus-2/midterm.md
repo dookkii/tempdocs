@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Một số thứ liên quan đến bài thi giữa kỳ
 
 ## Quy ước/Ký hiệu cho bài viết này

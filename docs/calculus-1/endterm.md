@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Đề cương cuối kỳ
 
 **Written by:** *dookkii_*, and support from da bois.

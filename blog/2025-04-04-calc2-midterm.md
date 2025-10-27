@@ -5,10 +5,8 @@ authors: dookkii_
 tags: [solve, solution]
 ---
 
+**Đề thi gốc:** [datuan5pdes - bomongiaitich.wordpress.com](https://datuan5pdes.wordpress.com/wp-content/uploads/2025/03/gkgt2khmt2025.pdf)
 
-**Đề thi gốc:** [datuan5pdes - bomongiaitich.wordpress.com](https://datuan5pdes.wordpress.com/wp-content/uploads/2025/03/gkgt2khmt2025.pdf).
+**Lời giải:** [Tunaaholic's Documentation 💖 - dokku.tunaa.io.vn](/docs/calculus-2/midterm-solution)
 
 <!-- truncate -->
-
-## Câu 1
-Cho chuỗi số sau: $a$

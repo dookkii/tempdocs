@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Một số thứ liên quan đến bài thi cuối kỳ
 
 ## Câu 1: Định nghĩa chuỗi luỹ thừa. Phát biểu định lý Abel về bán kính hội tụ của chuỗi lũy thừa.

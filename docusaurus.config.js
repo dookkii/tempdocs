@@ -10,8 +10,8 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'TomChienXuPlayground',
-  tagline: 'Dinosaurs are cool',
+  title: 'Tunaaholic\'s Documentations 💖',
+  tagline: 'Idk what am I doing here ;-;',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -28,7 +28,12 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -60,7 +65,7 @@ const config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/tomchienxu-theme.css',
         },
       }),
     ],
@@ -69,12 +74,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Tunaaholic\'s Documentations 💖',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'TomChienXuOrgannization\'s Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -82,60 +91,15 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'University Resources',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        links: [],
+        copyright: `Proudly built with <b>Docusaurus</b>. Copyright © <b>${new Date().getFullYear()} <a href="https://github.com/dookkii">Nguyễn "dookkii_" Đức Tuân</a></b>`,
       },
       prism: {
         theme: prismThemes.github,

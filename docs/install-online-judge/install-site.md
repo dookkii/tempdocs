@@ -58,13 +58,21 @@ The virtual environment will help keep the modules needed separate from the syst
 
 Now, fetch the site source code:
 ```bash title="Terminal (Environment activated)"
+# You can replace the "site" directory to your own configuration.
+
+# If you want to install VNOI's OJ:
 (vnojsite) $ git clone --recursive https://github.com/VNOI-Admin/OJ.git site
+
+# Our freshly customized OJ:
+(vnojsite) $ git clone --recursive https://github.com/dookkii/TomChienXuOnlineJudge.git site
+
 (vnojsite) $ cd site
 ```
 
 Install Python dependencies into the virtual environment.
 ```bash title="Terminal (Environment activated)"
 (vnojsite) $ pip3 install -r requirements.txt
+(vnojsite) $ pip3 install -r additional-requirements.txt
 ```
 
 Install Node.js packages:

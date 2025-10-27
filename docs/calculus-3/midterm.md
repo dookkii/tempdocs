@@ -1,6 +1,38 @@
+---
+sidebar_position: 1
+---
+
 # Một số thứ liên quan đến bài thi giữa kỳ
 
 ## Câu 1. Định nghĩa tích phân bội (2 hoặc 3)
+
+### Tích phân bội 2
+- Cho hàm số $f(x, y)$ xác định trên hình chữ nhật đóng $D = [a, b] \times [c, d]$.
+- Chia $D$ một cách tùy ý thành $k$ hình chữ nhật $S_1, S_2, \dots, S_k$ theo phân hoạch $P$.
+- Phân hoạch P chính là bộ các điểm chia $a = x_0 < x_1 < \dots < x_m = b$ và $c = y_0 < y_1 < \dots < y_p = d$ tạo thành một lưới chia $D$ thành các hình chữ nhật con $S_i$ (với $k = m \times p$).
+- Gọi $d(P)$ là độ dài đường chéo lớn nhất trong các hình chữ nhật $S_i$.
+- Chọn tùy ý các điểm $\xi_i \in S_i$ $(i = 1, 2, \dots, k)$. Khi đó ta lập tổng tích phân:
+$$
+\sigma(P, \xi)= \sum_{i = 1}^k f(\xi_i) \cdot A(S_i)
+$$
+trong đó $A(S_i)$ là diện tích hình chữ nhật $S_i$.
+- Nếu khi $k \to \infty$ sao cho $d(P) \to 0$ mà tổng tích phân tiến tới một giá trị hữu hạn, không phụ thuộc vào cách chia miền $D$ và cách chọn tùy ý điểm $\xi_i$ thì giá trị ấy gọi là **Tích phân bội hai của $f$ trên $D$**.
+- Ký hiệu: $\displaystyle \iint_{[a, b] \times[c, d]} f(x, y) \; \text{d}x \, \text{d}y$.
+
+### Tích phân bội 3
+- Cho hàm số $f(x, y, z)$ xác định trong một khối hộp chữ nhật đóng, bị chặn $E = [a, b] \times [c, d] \times [p, q]$.
+- Chia miền $E$ một cách tùy ý thành $k$ hình hộp con $S_1, S_2, \dots, S_k$ theo phân hoạch $P$. Phân hoạch $P$ chính là bộ các điểm chia $a = x_0 < x_1 < \dots < x_m = b$, $c = y_0 < y_1 < \dots < y_n = d$, $p = z_0 < z_1 < \dots < z_t = q$ tạo thành một lưới không gian, chia khối hộp $E$ thành các khối hộp con $S_i$ (số khối hộp con là $k = m \times n \times t$).
+- Gọi $d(P)$ là độ dài đường chéo lớn nhất trong các hình hộp con $S_i$.
+- Chọn tùy ý các điểm $\xi_i \in S_i$ $(i = 1, 2, \dots, k)$. Khi đó ta lập tổng tích phân:
+$$
+\sigma(P, \xi) = \sum_{i=1}^k f(\xi_i) \cdot V(S_i)
+$$
+trong đó $V(S_i)$ là thể tích hình hộp $S_i$.
+- Nếu khi $k \to \infty$ sao cho $d(P) \to 0$ mà tổng tích phân tiến tới một giá trị hữu hạn, không phụ thuộc vào cách chia miền $E$ và cách chọn tùy ý điểm $\xi_i$, thì giá trị ấy gọi là **Tích phân bội ba**.
+- Ký hiệu: $\displaystyle \iint_{[a, b] \times[c, d] \times [p, q]} f(x, y, z) \; \text{d}x \, \text{d}y \, \text{d}z$.
+
+
+
 
 ## Câu 2. Phát biểu nội dung định lý Fubini
 - Giả sử $A \subset \mathbb{R}^n$ và $B \subset \mathbb{R}^m$ là các hình hộp đóng và $f: A \times B \to \mathbb{R}$ là hàm khả tích. Hơn nữa giả sử rằng hàm $g_x : B \to \mathbb{R}$ xác định đối với mỗi $x \in A$ bởi đẳng thức:
@@ -26,57 +58,19 @@ $$
 $$
 
 ## Câu 3. Định nghĩa tích phân đường loại I
-- Giả sử $L = \overset{\frown}{AB}$ là đường cong trơn hay trơn từng khúc trong $\mathbb{R}^3$ có phương trình tham số:
+- Cho hàm số $f(x, y)$ xác định trên một cung phẳng $L = \overset{\frown}{AB}$ có độ dài hữu hạn.
+- Chia cung $L$ thành $n$ cung nhỏ, gọi tên và độ dài của chúng lần lượt là $\Delta s_0, \Delta s_1, \dots, \Delta s_i, \dots, \Delta s_n$.
+- Trên mỗi cung $\Delta s_i$, lấy một điểm $M_i$ bất kỳ.
+- Đại lượng $\displaystyle d(T_n) = \max_{1 \le i \le n} \{ \Delta s_i \}$ được gọi là đường kính của phân hoạch $T_n$.
+- Giới hạn nếu có của tổng:
 $$
-\begin{cases}
-x = x(t) \\
-y = y(t) && t \in [a, b] \\
-z = z(t)
-\end{cases}
+\lim_{d(T_n) \to 0} \sum_{i = 1}^n f(M_i) \cdot \Delta s_i
 $$
-
-trong đó:
+được gọi là **Tích phân đường loại I** của hàm $f(x, y)$ trên đường cong $L$ và ký hiệu:
 $$
-\begin{cases}
-A = \gamma(a) = \left( x(a), y(a), z(a) \right) \\
-B = \gamma(b) = \left( x(b), y(b), z(b) \right)
-\end{cases}
+\int_L f(x, y) \; \text{d}s = \lim_{d(T_n) \to 0} \sum_{i = 1}^n f(M_i) \cdot \Delta s_i
 $$
 
-$f(x, y, z)$ là hàm số xác định trên $L$.
-
-- Ta hãy chia đường cong $L = \overset{\frown}{AB}$ thành $n$ cung nhỏ bởi các điểm chia được lấy một cách tùy ý:
-$$
-A = M_0, M_1, \dots, M_i, \dots, M_n = B
-$$
-Ký hiệu độ dài mỗi cung $M_{i - 1}M_i$ là $\Delta s_i$.
-
-- Ta gọi mỗi cách phân chia cung $\overset{\frown}{AB}$ thành các cung nhỏ như vậy là một phân hoạch của đường cong $L$ và ký hiệu là $T_n$:
-$$
-T_n = \{ M_0, M_1, \dots, M_i, \dots, M_n \}
-$$
-
-- Đại lượng 
-$$
-\displaystyle d(T_n) = \max_{1 \le i \le n} \{ \Delta s_i \}
-$$
-được gọi là đường kính của phân hoạch $T_n$.
-
-- Trên mỗi cung $\overset{\frown}{M_{i - 1}M_i}$ $(i = 1, \dots, n)$ ta lấy tùy ý một điểm $P_i(x_i, y_i, z_i)$ và lập tổng:
-$$
-S(T_n, P_i) = \sum_{i = 1}^n f(x_i, y_i, z_i) \cdot \Delta s_i
-$$
-Bằng cách thay đổi cách chia đường cong $L$ và cách chọn các điểm $P_i$ trên mỗi cung nhỏ $\overset{\frown}{M_{i - 1}M_i}$ ta nhận được tập hợp vô hạn tổng $\{ S(T_n, P_i) \}$.
-
-- Ta nói họ $\{ S(T_n, P_i) \}$ có giới hạn $I$ hữu hạn khi $D(T_n) \to \infty$, nếu với mọi $\varepsilon > 0$ cho trước, tồn tại $\delta = \delta(\varepsilon) > 0$, sao cho với mọi phân hoạch $T_n$ của đường cong $L$ mà $d(T_n) < \delta$ và với mọi cách chọn $P_i \in \overset{\frown}{M_{i - 1}M_i}$, ta có $|S(T_n, P_i) - I| < \varepsilon$. Khi đó ta ký hiệu:
-$$
-I = \lim_{d(T_n) \to 0} S(T_n, P_i)
-$$
-
-- Nếu giới hạn trên tồn tại hữu hạn thì ta nói hàm $f(x, y, z)$ khả tích trên đường cong $L$ và giới hạn $I$ được gọi là **Tích phân đường loại I** của hàm $f(x, y, z)$ trên đường cong $L$ và ký hiệu:
-$$
-\int_L f(x, y, z) \; \text{d}s = \lim_{d(T_n) \to 0} S(T_n, P_i) = I
-$$
 
 ## Câu 4. Phát biểu công thức về tính diện tích / thể tích
 
@@ -103,23 +97,13 @@ $$
 ## Câu 5. Phát biểu công thức về tính khối lượng của một vật khi biết hàm mật độ khối lượng (hoặc công thức liên quan tọa độ trọng tâm)
 
 ### Tính khối lượng của một vật khi biết hàm mật độ khối lượng
-- Một đường cong $L = \overset{\frown}{AB}$ trơn hay trơn từng khúc trong không gian $\mathbb{R}^3$ được cấu tạo bởi một dây vật chất có mật độ khối lượng thay đổi theo quy luật $\rho(x, y, z)$, trong đó $\rho(x, y, z)$ là hàm liên tục trên $L$.
-
-- Chia cung $\overset{\frown}{AB}$ một cách tùy ý thành các cung nhỏ $\overset{\frown}{M_{i - 1}M_i}$ $(i = 1, 2, \dots, n)$. Mỗi cung $\overset{\frown}{M_{i - 1}M_i}$ có độ dài tương ứng là $\Delta s_i$. Khi đó khối lượng $m_i$ của cung $\overset{\frown}{M_{i - 1}M_i}$ gần đúng bằng $\rho(x_i, y_i, z_i) \cdot \Delta s_i$, tức là: $m_i \approx \rho(x_i, y_i, z_i) \cdot \Delta s_i$ $(i = 1, 2, \dots, n)$, trong đó $(x_i, y_i, z_i)$ là điểm nào đó trên cung $\overset{\frown}{M_{i - 1}M_i}$.
-
-- Do đó khối lượng $m$ của dây $\overset{\frown}{AB}$ được tính gần đúng:
+- Nếu $L = \overset{\frown}{AB}$ là "*đường cong vật chất*" và $\rho(x, y, z)$ là hàm mật độ khối lượng, khối lượng $m$ của vật thể dọc theo cung $L$ được tính bằng:
 $$
-m \approx \sum_{i = 1}^n m_i \approx \sum_{i = 1}^n \rho(x_i, y_i, z_i) \cdot \Delta s_i
+m = \displaystyle \int_L \rho(x, y, z) \; \text{d}s
 $$
-
-- Khi $d(T_n) = \displaystyle \max_{1 \le i \le n} \Delta s_i \to 0$, ta có công thức:
-$$
-m = \lim_{(T_n) \to 0} \sum_{i = 1}^n \rho(x_i, y_i, z_i) \cdot \Delta s_i = \int_L \rho(x, y, z) \; \text{d}s
-$$
-
-- Vậy ta có công thức: $m = \displaystyle \int_L \rho(x, y, z) \; \text{d}s$.
 
 ### Công thức liên quan tọa độ trọng tâm
+- Tọa độ trọng tâm của dây $L = \overset{\frown}{AB}$ được tính theo công thức:
 $$
 x_0 = \frac{1}{m} \int_L x \cdot \rho(x, y, z) \; \text{d}s
 $$

@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Một số thứ liên quan đến bài thi cuối kỳ
 
 ## Bảng tần số và các tham số thống kê

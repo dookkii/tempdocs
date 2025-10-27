@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Đề cương giữa kỳ
 
 1. Định nghĩa cận trên đúng, cận dưới đúng của một tập hợp

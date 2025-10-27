@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Lý thuyết về chuỗi Fourier
 
 ## Khái niệm

@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Đề thi giữa kỳ Giải tích 2 - MAT2502
 
 ## Đề thi
@@ -92,13 +96,13 @@ Vì giới hạn này tồn tại khác $0$ nên chuỗi số $\displaystyle \su
 
 Mà $\displaystyle \sum_{n = 0}^{+\infty} \dfrac{1}{n}$ là chuỗi điều hòa, vậy nên chuỗi này phân kỳ.
 
-Theo dấu hiệu so sánh, $\displaystyle \sum_{n = 0}^{+\infty} \left| (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right) \right|$ cũng phân kỳ $\textcircled{*}$.
+Theo dấu hiệu so sánh, $\displaystyle \sum_{n = 0}^{+\infty} \left| (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right) \right|$ cũng phân kỳ $\boxed{*}$.
 
 <hr />
 
 Xét chuỗi: $\displaystyle \sum_{n = 0}^{+\infty} (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right)$ là chuỗi đan dấu.
 
-Ta có: $\displaystyle \lim_{n \to \infty} \dfrac{2n + 100}{3n^2 + n} = 0 \; \textcircled{1}$.
+Ta có: $\displaystyle \lim_{n \to \infty} \dfrac{2n + 100}{3n^2 + n} = 0 \; \boxed{1}$.
 
 Xét hàm số $f(x) = \dfrac{2x + 100}{3x^2 + x}$.
 
@@ -109,13 +113,13 @@ $\forall \; x > 0: \begin{cases}
 (3x^2 + x)^2 > 0
 \end{cases} \Rightarrow \dfrac{-6x^2 - 612x - 100}{(3x^2 + x)^2} < 0 \Rightarrow f'(x) < 0 \; \forall \; x > 0$.
 
-Như vậy, $\left\{ \dfrac{2n + 100}{3n^2 + n} \right\}_{n = 0}^\infty$ lập thành một dãy số giảm $\textcircled{2}$.
+Như vậy, $\left\{ \dfrac{2n + 100}{3n^2 + n} \right\}_{n = 0}^\infty$ lập thành một dãy số giảm $\boxed{2}$.
 
-Từ $\textcircled{1}$ và $\textcircled{2}$: Chuỗi số $\displaystyle \sum_{n = 0}^{+\infty} (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right)$ hội tụ theo dấu hiệu Leibniz $\textcircled{**}$.
+Từ $\boxed{1}$ và $\boxed{2}$: Chuỗi số $\displaystyle \sum_{n = 0}^{+\infty} (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right)$ hội tụ theo dấu hiệu Leibniz $\boxed{**}$.
 
 <hr />
 
-Từ $\textcircled{*}$ và $\textcircled{**}$: Chuỗi số $\displaystyle \sum_{n = 0}^{+\infty} (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right)$ bán hội tụ.
+Từ $\boxed{*}$ và $\boxed{**}$: Chuỗi số $\displaystyle \sum_{n = 0}^{+\infty} (-1)^n \left( \dfrac{2n + 100}{3n^2 + n} \right)$ bán hội tụ.
 
 ## Câu 3
 Khảo sát sự hội tụ đều của các chuỗi hàm-dãy hàm sau trong khoảng $(0; +\infty)$.
@@ -206,8 +210,8 @@ Xét tại cả hai đầu mút là $x = -1$ và $x = 1$, chuỗi lũy thừa tr
 $\displaystyle \sum_{n = 1}^{+\infty} (-1)^{n - 1} 1^{2n - 2} = \sum_{n = 1}^{+\infty} (-1)^{n - 1}$.
 
 Xét giới hạn: $\displaystyle \lim_{n \to \infty} (-1)^{n - 1} = \begin{cases}
-n \text{ lẻ} &: \displaystyle \lim_{\substack{n \to \infty \\ n \text{ lẻ}}} (-1)^{n - 1} = 1 \\
-n \text{ chẵn} &: \displaystyle \lim_{\substack{n \to \infty \\ n \text{ chẵn}}} (-1)^{n - 1} = -1
+n \text{ is odd} &: \displaystyle \lim_{\substack{n \to \infty \\ n \text{ is odd}}} (-1)^{n - 1} = 1 \\
+n \text{ is even} &: \displaystyle \lim_{\substack{n \to \infty \\ n \text{ is even}}} (-1)^{n - 1} = -1
 \end{cases}$
 
 Như vậy, không tồn tại giới hạn $\displaystyle \lim_{n \to \infty} (-1)^{n - 1}$.
