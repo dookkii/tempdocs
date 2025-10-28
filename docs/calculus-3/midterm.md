@@ -29,7 +29,7 @@ $$
 $$
 trong đó $V(S_i)$ là thể tích hình hộp $S_i$.
 - Nếu khi $k \to \infty$ sao cho $d(P) \to 0$ mà tổng tích phân tiến tới một giá trị hữu hạn, không phụ thuộc vào cách chia miền $E$ và cách chọn tùy ý điểm $\xi_i$, thì giá trị ấy gọi là **Tích phân bội ba**.
-- Ký hiệu: $\displaystyle \iint_{[a, b] \times[c, d] \times [p, q]} f(x, y, z) \; \text{d}x \, \text{d}y \, \text{d}z$.
+- Ký hiệu: $\displaystyle \iiint_{[a, b] \times[c, d] \times [p, q]} f(x, y, z) \; \text{d}x \, \text{d}y \, \text{d}z$.
 
 
 
@@ -59,7 +59,7 @@ $$
 
 ## Câu 3. Định nghĩa tích phân đường loại I
 - Cho hàm số $f(x, y)$ xác định trên một cung phẳng $L = \overset{\frown}{AB}$ có độ dài hữu hạn.
-- Chia cung $L$ thành $n$ cung nhỏ, gọi tên và độ dài của chúng lần lượt là $\Delta s_0, \Delta s_1, \dots, \Delta s_i, \dots, \Delta s_n$.
+- Chia cung $L$ thành $n$ cung nhỏ, gọi tên và độ dài của chúng lần lượt là $\Delta s_1, \dots, \Delta s_i, \dots, \Delta s_n$.
 - Trên mỗi cung $\Delta s_i$, lấy một điểm $M_i$ bất kỳ.
 - Đại lượng $\displaystyle d(T_n) = \max_{1 \le i \le n} \{ \Delta s_i \}$ được gọi là đường kính của phân hoạch $T_n$.
 - Giới hạn nếu có của tổng:
